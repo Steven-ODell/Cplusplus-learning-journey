@@ -1,10 +1,14 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-//Take a string from the user with getline.
-//Loop through it character by character using .length() as your bound.
-//Count and print how many letters, digits, and spaces it contains.
-//Use the isalpha, isdigit, isspace functions.
+
+//Create a Token struct with type and value as std::string fields. 
+//Then take your character counter from the last challenge and
+//instead of just counting, create a Token every time you identify
+//a sequence — one token for a word, one for a number, one for a space.
+//Store them in a raw array of Token (max size 100 is fine 
+//to hardcode for now). 
+//Print each token's type and value at the end.
 
 //Main
 int main(){
