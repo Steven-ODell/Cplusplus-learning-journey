@@ -24,7 +24,6 @@ struct Token {
 //Main
 int main(){
   Token t;
-  std::string token_list;
   std::string input_string;
   std::getline(std::cin, input_string);
   int letter_counter = 0;

@@ -53,7 +53,7 @@ int main(){
       while (isspace(input_string[i])){
         word += " " ;
         i++;
-        }
+      }
       holding_array[counter].type = "SPACE";
       holding_array[counter].index = start; 
       holding_array[counter].value = word;
@@ -62,12 +62,12 @@ int main(){
       start = i;
       }
     else {
-    holding_array[counter].type = "UNKNOWN";
-    //next line converts single char to a string
-    holding_array[counter].value = std::string(1, input_string[i]);
-    holding_array[counter].index = i;
-    counter++;
-    i++;
+      holding_array[counter].type = "UNKNOWN";
+      //next line converts single char to a string
+      holding_array[counter].value = std::string(1, input_string[i]);
+      holding_array[counter].index = i;
+      counter++;
+      i++;
     }
   }
   for (int j = 0; j < counter; j++) {
